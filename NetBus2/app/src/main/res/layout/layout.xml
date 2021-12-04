@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topRelLayout"
+        android:id="@+id/midRelLayout"
+        android:layout_marginTop="5dp"
+        android:background="@color/dimWhite"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_blue_bus"
+            android:id="@+id/busIcon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Travel Nepal"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/busIcon"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/tvDbTravelName"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBusNo"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/tvDbTravelName"
+            android:layout_toRightOf="@+id/busIcon"
+            android:layout_marginLeft="15dp"
+            android:text="Bus No: "
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDbBusNo"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/tvDbTravelName"
+            android:layout_toRightOf="@+id/tvBusNo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPrice"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/tvBusNo"
+            android:layout_toRightOf="@+id/busIcon"
+            android:layout_marginLeft="20dp"
+            android:text="Price: "
+            android:layout_marginTop="4dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDbPrice"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/tvDbBusNo"
+            android:layout_toRightOf="@+id/tvPrice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPrice"
+            android:text="Total Seats: "
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:id="@+id/totalSeat"
+            android:layout_toRightOf="@+id/busIcon"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPrice"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:id="@+id/tvDbTotalSeat"
+            android:layout_toRightOf="@+id/totalSeat"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totalSeat"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="Source: "
+            android:id="@+id/tvSourceText"
+            android:layout_toRightOf="@+id/busIcon"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDbTotalSeat"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:id="@+id/tvDBSource"
+            android:layout_toRightOf="@+id/tvSourceText"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSourceText"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="Destination: "
+            android:id="@+id/tvDestinaionText"
+            android:layout_toRightOf="@+id/busIcon"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDBSource"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:id="@+id/tvDBDestination"
+            android:layout_toRightOf="@+id/tvDestinaionText"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDestinaionText"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="Date: "
+            android:id="@+id/tvDateText"
+            android:layout_toRightOf="@+id/busIcon"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDBDestination"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:id="@+id/tvDBDate"
+            android:layout_toRightOf="@+id/tvDateText"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure Time"
+            android:layout_toRightOf="@+id/busIcon"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvDateText"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/departTextView"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/departTextView"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvDBDate"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvDbDepartureTime"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:text="Book Now"
+            android:id="@+id/btnBook"
+            android:layout_below="@id/departTextView"
+            android:background="@drawable/bg"
+            android:textColor="@color/pureWhite"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

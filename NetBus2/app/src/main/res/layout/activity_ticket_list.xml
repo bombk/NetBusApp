@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketList"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTicketNumber1"
+            android:textSize="22dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/busIcon"
+            android:text="Ticket Number: "
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTicketNo"
+            android:textSize="22dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/tvTicketNumber1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTravelname1"
+            android:textSize="22dp"
+            android:layout_below="@+id/tvTicketNumber1"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/busIcon"
+            android:text="Travel Name: "
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTravelName"
+            android:textSize="22dp"
+            android:layout_below="@+id/tvTicketNo"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/tvTravelname1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBusNo1"
+            android:textSize="22dp"
+            android:layout_below="@+id/tvTravelname1"
+            android:textColor="@color/colorPrimary"
+            android:text="Bus No: "
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBusNo"
+            android:textSize="22dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/tvBusNo1"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tvTravelName"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPrice1"
+            android:textSize="22dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/tvBusNo1"
+            android:text="Price: "
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPrice"
+            android:textSize="22dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/tvBusNo"
+            android:layout_toRightOf="@+id/tvPrice1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPrice1"
+            android:text="Seat No: "
+            android:textSize="22dp"
+            android:id="@+id/tvSeatNo1"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPrice"
+            android:textSize="22dp"
+            android:id="@+id/tvSeatNo"
+            android:layout_toRightOf="@+id/tvSeatNo1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSeatNo1"
+            android:textSize="22dp"
+            android:text="Source: "
+            android:id="@+id/tvSource1"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSeatNo"
+            android:textSize="22dp"
+            android:id="@+id/tvSource"
+            android:layout_toRightOf="@+id/tvSource1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSource1"
+            android:textSize="22dp"
+            android:text="Destination: "
+            android:id="@+id/tvDestinaion1"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSource"
+            android:textSize="22dp"
+            android:id="@+id/tvDestination"
+            android:layout_toRightOf="@+id/tvDestinaion1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDestinaion1"
+            android:textSize="22dp"
+            android:text="Date: "
+            android:id="@+id/tvDate1"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDestination"
+            android:textSize="22dp"
+            android:id="@+id/tvDate"
+            android:layout_toRightOf="@+id/tvDate1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure Time"
+            android:textSize="22dp"
+            android:layout_below="@+id/tvDate1"
+            android:id="@+id/tvDepartureTime1"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvDepartureTime1"
+            android:textSize="22dp"
+            android:layout_below="@+id/tvDate"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvDepartureTime"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

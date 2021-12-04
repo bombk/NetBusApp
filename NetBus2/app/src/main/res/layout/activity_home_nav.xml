@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeNav">
+    <RelativeLayout
+        android:id="@+id/midRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:padding="15dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/actSouce"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Source" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actDestination"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/actSouce"
+            android:layout_marginTop="35dp"
+            android:hint="Enter Destination" />
+
+        <TextView
+            android:id="@+id/tvDateDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actDestination"
+            android:layout_marginTop="35dp"
+            android:text="Choose Date:"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/calendaerImage"
+            android:layout_width="34dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/actDestination"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/tvDateDetails"
+            android:background="@drawable/calender" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDate"
+            android:layout_toRightOf="@id/calendaerImage"
+            android:layout_below="@id/actDestination"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:textSize="18dp"
+            />
+
+        <Button
+            android:id="@+id/btnBookTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDateDetails"
+            android:layout_marginTop="50dp"
+            android:text="Search Bus"
+            android:background="@drawable/bg"
+            android:textColor="@color/pureWhite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttomRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/midRelLayout"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/slideShowBus"
+            android:layout_width="900dp"
+            android:layout_height="1000dp"
+            android:src="@drawable/busimage"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

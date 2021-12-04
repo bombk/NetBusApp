@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyTicketBook"
+    android:padding="20dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Ticket Details"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvYourTicket"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTravelname"
+        android:textSize="22dp"
+        android:layout_below="@+id/tvYourTicket"
+        android:textColor="@color/colorPrimary"
+        android:layout_toRightOf="@+id/busIcon"
+        android:text="Travel Name: "
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvShowTravelName"
+        android:textSize="22dp"
+        android:layout_below="@+id/tvYourTicket"
+        android:textColor="@color/colorPrimary"
+        android:layout_toRightOf="@+id/tvTravelname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBusNo"
+        android:textSize="22dp"
+        android:layout_below="@+id/tvTravelname"
+        android:textColor="@color/colorPrimary"
+        android:text="Bus No: "
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvShowBusNo"
+        android:textSize="22dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_toRightOf="@+id/tvBusNo"
+        android:layout_marginLeft="10dp"
+       android:layout_below="@+id/tvShowTravelName"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPrice"
+        android:textSize="22dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/tvBusNo"
+        android:text="Price: "
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvShowPrice"
+        android:textSize="22dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/tvShowBusNo"
+        android:layout_toRightOf="@+id/tvPrice"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPrice"
+        android:text="Seat No: "
+        android:textSize="22dp"
+        android:id="@+id/tvSeatNo"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPrice"
+        android:textSize="22dp"
+        android:id="@+id/tvShowSeatNo"
+        android:layout_toRightOf="@+id/tvSeatNo"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSeatNo"
+        android:textSize="22dp"
+        android:text="Source: "
+        android:id="@+id/tvSourceText"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvShowSeatNo"
+        android:textSize="22dp"
+        android:id="@+id/tvShowSource"
+        android:layout_toRightOf="@+id/tvSourceText"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSourceText"
+        android:textSize="22dp"
+        android:text="Destination: "
+        android:id="@+id/tvDestinaionText"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvShowSource"
+        android:textSize="22dp"
+        android:id="@+id/tvShowDestination"
+        android:layout_toRightOf="@+id/tvDestinaionText"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDestinaionText"
+        android:textSize="22dp"
+        android:text="Date: "
+        android:id="@+id/tvDateText"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvShowDestination"
+        android:textSize="22dp"
+        android:id="@+id/tvShowDate"
+        android:layout_toRightOf="@+id/tvDateText"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Departure Time"
+        android:textSize="22dp"
+        android:layout_below="@+id/tvDateText"
+        android:id="@+id/departTextView"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/departTextView"
+        android:textSize="22dp"
+        android:layout_below="@+id/tvShowDate"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvShowDepartureTime"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confrom Book"
+        android:id="@+id/btnBook"
+        android:layout_below="@id/departTextView"
+        android:background="@drawable/bg"
+        android:textColor="@color/pureWhite"
+        android:layout_marginTop="50dp"
+        android:onClick="btnConformTicket"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

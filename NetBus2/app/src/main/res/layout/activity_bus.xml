@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bus">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/topRelLayout"
+    android:layout_marginTop="10dp"
+    android:background="@color/dimWhite"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:id="@+id/tvShowDate"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/midRelLayout"
+        android:layout_below="@+id/topRelLayout"
+        android:layout_marginTop="5dp"
+        android:background="@color/dimWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSource"
+            android:text="Source: "
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSourcePalace"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/tvSource"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDestinaion"
+            android:text="Destinaion: "
+            android:layout_toRightOf="@+id/tvSourcePalace"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorPrimary"
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDestinaionPalace"
+            android:layout_toRightOf="@+id/tvDestinaion"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/midRelLayout">
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycleView"
+           />
+
+    </RelativeLayout>
+
+</RelativeLayout>

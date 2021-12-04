@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NetBus</string>
+    <string name="fnameerr">Enter first Name.</string>
+    <string name="lnameerr">Enter last name.</string>
+    <string name="phnoerr">Enter valid mobile number.</string>
+    <string name="emailerr">Enter valid email address.</string>
+    <string name="passerr">Enter strong password.</string>
+    <string name="cpasserr">Password is not matched.</string>
+</resources>

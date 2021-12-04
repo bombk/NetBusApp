@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteBusDetails"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete All Ticket of Bus"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/tvDeleteBus"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bus Number"
+        android:layout_below="@+id/tvDeleteBus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etBusNuber"
+        android:inputType="number"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Ticket"
+        android:background="@drawable/bg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etBusNuber"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/pureWhite"
+        android:id="@+id/btnDelete"
+        android:onClick="btnDeleteTicket"
+        />
+
+
+
+
+</RelativeLayout>
